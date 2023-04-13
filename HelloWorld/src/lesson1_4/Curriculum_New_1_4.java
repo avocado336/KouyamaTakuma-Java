@@ -23,9 +23,9 @@ public class Curriculum_New_1_4 {
 		a = 0;
 		b = 0;
 		c = 0;
-		d = 0;
+		d = 0L;
 		e = 0.0F;
-		f = 0.0;
+		f = 0.0d;
 		g = '\u0000';
 		h = null;
 		i = false;
@@ -58,9 +58,9 @@ public class Curriculum_New_1_4 {
 		// 20.0
 		System.out.println(e + f);
 		// a ハロー true
-		System.out.println(g + h + i);
+		System.out.println(g + " " + h + " "+ i);
 		// 11130.0 数字を全て足す
-		System.out.println(a + b + c + d + e + f + g + h + i);
+		System.out.println(a + b + c + d + e + f );
 		// 10000000000                小数点以外の数字を全てかける
 		System.out.println(a * b * c * d);
 		// 0.105                      10.5割る100をする
