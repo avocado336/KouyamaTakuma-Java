@@ -27,13 +27,13 @@ public class Curriculum_New_1_5 {
 			System.out.println("身長は" + height + "です");
 			System.out.println("体重は" + weight + "です");
 	        System.out.println("好きな食べ物は" + fvf + "です");
-		
+	        
         // Q2 Q1で作成した自己紹介に続いて、BMIがコンソールに出力されるようにしてください
     	// 「BMIは○○です」
         // ただし計算は数値を直書きせず、全て変数を使ってすること
 	    // Q2を下記に記載
 	        double BMI = 62.2 / 1.705 / 1.705;
-	        System.out.println("BMIは" + (String.format("%.1f",BMI)) + "です");
+	        System.out.println("BMIは" + (String.format("%.1f",BMI)) + "です" + "\n");
   	    	
         // Q3 Q1で宣言した変数に再代入し、下記の通りコンソールに出力してください
     	// 初めまして鈴木一郎です
