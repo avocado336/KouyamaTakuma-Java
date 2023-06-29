@@ -14,7 +14,7 @@ public class Qes6 {
 		String[] goods = name.split("、");
 		Random rand = new Random();
 		
-		// 繰り返しfor文を用いてgoodsという配列をmerchanという変数に代入
+		// 拡張for文を用いてgoodsという配列をmerchanという変数に代入
 		for(String merchan : goods) {
 			int score = rand.nextInt(12);
 			// switch文を用いて()内の条件が下記caseだった場合sysoutっで出力
@@ -41,12 +41,12 @@ public class Qes6 {
 					int result = merchan == "テレビ" ? score : 11 - score;
 					System.out.println(merchan + "の残り台数は" + result + "台です");
 					break;
-				default:
-					System.out.println("『受け取った値』は指定の商品ではありません");
+				default:					
+					System.out.println("『" + merchan + "』は指定の商品ではありません");
 			}
 
 			
-		}
+		}sc.close();
 
 		}
 	}
