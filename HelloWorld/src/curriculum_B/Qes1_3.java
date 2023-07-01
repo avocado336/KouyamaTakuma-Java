@@ -23,7 +23,7 @@ public class Qes1_3 {
 
 		// boolean関数でwinという変数にtrueを代入
 		boolean win = true;
-		
+
 		boolean fin = true;
 
 		// int型counに１を代入
@@ -31,32 +31,31 @@ public class Qes1_3 {
 
 		// findメソッドを用いて一致すればsysoutで()内のテキストを表示
 		// if文の中にlengthを使い文字数のカウント
-		while(fin) {
+		while (fin) {
 			// 文字列の入力の受け取り
 			name = sc.nextLine();
 			// Patternクラスで()内の正規表現をパターン化する
 			Pattern p = Pattern.compile("^[A-Za-z0-9]+$");
 			// MatcherクラスでPatternクラスで宣言したpと文字列がマッチするか確認
 			Matcher m = p.matcher(name);
-			
+
 			if (name.length() >= 10) {
-			// sysoutで文字数が10文字以上の際本コメントを出力
+				// sysoutで文字数が10文字以上の際本コメントを出力
 				System.out.println("名前を10文字以内にしてください");
-			// elseif文の中にlengthとisEmpty(null)の条件を指定
+				// elseif文の中にlengthとisEmpty(null)の条件を指定
 			} else if (name.isEmpty() || Objects.isNull(name)) {
-			//			name.length() <= 0 || 
-			// sysoutで文字数が0文字またはnullの場合本コメントを出力
+				// sysoutで文字数が0文字またはnullの場合本コメントを出力
 				System.out.println("名前を入力してください");
-			// else文でそれ以外の際
+				// else文でそれ以外の際
 			} else if (!m.matches()) {
 				System.out.println("半角英数字のみで名前を入力してください");
 			} else {
+				// while文で指定したfinという条件がfalseとする
 				fin = false;
-			// sysoutでそれ以外の文字を入力した際に本コメントを出力
+				// sysoutでそれ以外の文字を入力した際に本コメントを出力
 				System.out.println("ユーザー名「" + name + "」を登録しました");
 			}
 		}
-	
 
 		// do while関数を用いる
 		do {
@@ -103,12 +102,13 @@ public class Qes1_3 {
 			}
 			// int型変数counに１を加えていく処理
 			coun++;
-
+			
+		// while文の中の条件で勝った場合（win）の時に処理を終了する	
 		} while (win);
+		// scannerクラスで指定した変数scの終了を宣言する
 		sc.close();
 
 	}
 
 }
-
 
