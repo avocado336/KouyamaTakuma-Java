@@ -33,17 +33,6 @@ public class Curriculum_New_1_18 {
 		
 		// kotaeメソッド内に記載したい中身（変数：e）を記載
 		System.out.println(kotae(e));
-//		kotae(e);		
-//		// if文を用いてkotaeメソッドがe(50より大きい）の場合
-//		if(kotae(e)) {
-//			// sysoutでtureを出力
-//			System.out.println(true);
-//		// 上記以外の場合	
-//		} else {
-//			// sysoutでfalseを出力
-//			System.out.println(false);
-//		}
-//		
 		
 	}
 	// 上で渡されたメソッドの中の仮メソッドで指定した変数を宣言
