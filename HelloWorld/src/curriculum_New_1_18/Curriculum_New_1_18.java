@@ -32,17 +32,18 @@ public class Curriculum_New_1_18 {
 		double e = randAve(d);
 		
 		// kotaeメソッド内に記載したい中身（変数：e）を記載
-		kotae(e);
-		// if文を用いてkotaeメソッドがe(50より大きい）の場合
-		if(kotae(e)) {
-			// sysoutでtureを出力
-			System.out.println(true);
-		// 上記以外の場合	
-		} else {
-			// sysoutでfalseを出力
-			System.out.println(false);
-		}
-		
+		System.out.println(kotae(e));
+//		kotae(e);		
+//		// if文を用いてkotaeメソッドがe(50より大きい）の場合
+//		if(kotae(e)) {
+//			// sysoutでtureを出力
+//			System.out.println(true);
+//		// 上記以外の場合	
+//		} else {
+//			// sysoutでfalseを出力
+//			System.out.println(false);
+//		}
+//		
 		
 	}
 	// 上で渡されたメソッドの中の仮メソッドで指定した変数を宣言
@@ -53,7 +54,7 @@ public class Curriculum_New_1_18 {
 	}
 	// 上で渡されたkakeメソッドの中の仮メソッドでint型変数を宣言
 	public static int kake(int a,int b) {
-		// returnを用いて上で宣言したint型の変数a*bの結果をmainメソッドに戻す
+		// return句を用いて上で宣言したint型の変数a*bの結果をmainメソッドに戻す
 		return a * b;
 	}
 	// 上で渡されたhairetuメソッドの中の仮メソッドでint型配列変数aを宣言
@@ -86,7 +87,7 @@ public class Curriculum_New_1_18 {
 			// 変数名scoreを配列型変数arrのi(i - 1番目)に渡す
 			arr[i-1] = score;
 		}
-		// returnを用いてint型配列の変数arrをmainメソッドに戻す
+		// return句を用いてint型配列の変数arrをmainメソッドに戻す
 		return arr;
 	}	
 	
@@ -103,13 +104,13 @@ public class Curriculum_New_1_18 {
 		double average = sum / dd.length;
 		// sysoutで変数averageを出力
 		System.out.println(average);
-		// returnを用いてdouble型変数averageをmainメソッドに戻す
+		// return句を用いてdouble型変数averageをmainメソッドに戻す
 		return average;
 	}
 	// 上で渡されたkotaeメソッド内の仮メソッドでdouble型変数eを宣言
 	public static boolean kotae(double ee) {
-		// returnを用いてeが50より大きい場合trueになる結果をmainメソッドに戻す
-		return ee >= 50;
+		// return句を用いてeが50より大きい場合trueになる結果をmainメソッドに戻す
+		return (ee >= 50);
 	}
 }
 
