@@ -15,19 +15,18 @@
 		
   */
 
-package Theme2_play;
+package theme2_play;
 
-// Theme2_methodパッケージのクラスBをインポートする
-import Theme2_method.B;
+import theme2_method.Syori;
 
-public class A {
+public class Zikkou {
 	//メインメソッドを宣言
 	public static void main(String[] args) {
 		// クラスからインスタンスを生成し文字列を変数に代入
-		B kaiwa = new B("寿司");
+		Syori syori1 = new Syori("寿司","日本","和食");
 		// インスタンスメソッドの呼び出し
-		kaiwa.intro();
-		kaiwa.time();
+		syori1.intro();
+		syori1.time();
 	}
 
 }
