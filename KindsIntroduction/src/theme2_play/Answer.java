@@ -22,10 +22,10 @@ public class Answer {
 	//メインメソッドを宣言
 	public static void main(String[] args) {
 		// クラスからインスタンスを生成し文字列を変数に代入
-		Process syori1 = new Process("寿司","日本","和食");
+		Process process1 = new Process("寿司","日本","和食");
 		// インスタンスメソッドの呼び出し
-		syori1.intro();
-		syori1.time();
+		process1.intro();
+		process1.time();
 	}
 
 }

@@ -11,7 +11,7 @@ public class Process {
 	
 	// Processクラス（）内で引数として文字列型を受け取る
 	public Process(String food,String country,String japaneseFood) {
-		// 引数の値でフィールドを初期化
+		// 引数の値でフィールドを初期化する
 		this.food = food;
 		this.country = country;
 		this.japaneseFood = japaneseFood;
