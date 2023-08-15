@@ -23,6 +23,24 @@
 
 package StatusProcess;
 
-// 今後不変の数値が親クラスに入って一括変更処理をかけるために親クラスを抽象クラスとして入れ物のみ今回は定義
-public abstract class Process {
+// 継承で親クラスの情報を子クラスに引っ張る
+public class Sub_Name {
+	// フィールドの宣言
+	private String subname;
+
+	// コンストラクタ
+	public Sub_Name() {
+	}
+	
+	// セッターメソッドを使って（）の文字列を引数として受け取る
+	public void setSubname(String subname) {
+		this.subname = subname;
+	}
+	
+	// ゲッターメソッドを使ってフィールドの値を取り出す
+	public String getSubname() {
+		return this.subname;
+	}
+
+
 }

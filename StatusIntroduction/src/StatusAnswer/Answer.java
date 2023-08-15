@@ -26,30 +26,45 @@ package StatusAnswer;
 // スキャナークラスのインポート
 import java.util.Scanner;
 
-import StatusProcess.Process;
-import StatusProcess.Sub;
+import StatusProcess.Sub_Attack;
+import StatusProcess.Sub_Defense;
+import StatusProcess.Sub_Hp;
+import StatusProcess.Sub_Mp;
+import StatusProcess.Sub_Name;
+import StatusProcess.Sub_Speed;
 
 public class Answer {
 
 	public static void main(String[] args) {
+		// スキャナークラスを生成し変数に代入
 		Scanner sc = new Scanner(System.in);
-		// String変数nameにテキストを入力できるnextLineを代入
-		String name = sc.nextLine();
-		// スーパークラスのクラスをインスタンス生成
-		Process process1 = new Process();
+		// String変数にテキストを入力できるnextLineを代入
+		String usename = sc.nextLine();
+		
+		
+		// サブクラスのインスタンスを生成
+		Sub_Name name1 = new Sub_Name();
 		// インスタンスメソッドの呼び出し
-		process1.setName("名前");
-		name = process1.setName(name);
-		process1.setStatus("ステータス");
-		process1.setStart("冒険");
+		name1.setSubname(usename);
+		Sub_Hp hp1 = new Sub_Hp();
+		Sub_Mp mp1 = new Sub_Mp();
+		Sub_Attack attack1 = new Sub_Attack();
+		Sub_Speed speed1 = new Sub_Speed();
+		Sub_Defense defense1 = new Sub_Defense();
+
+
 		
 		// sysoutで出力
-		System.out.println("こんにちは「"+ process1.getName() + "」さん");
-		System.out.println(process1.getStatus());
-		// サブクラスのクラスをインスタンス生成
-		Sub sub = new Sub();
+		System.out.println("こんにちは「"+ name1.getSubname() + "」さん");
+		System.out.println("ステータス");
+		System.out.println("HP：" + hp1.getHp());
+		System.out.println("MP：" + mp1.getMp());
+		System.out.println("攻撃力：" + attack1.getAttack());
+		System.out.println("素早さ：" + speed1.getSpeed());
+		System.out.println("防御力：" + defense1.getDefense());
 		System.out.println();
-		System.out.println("さあ" + process1.getStart() + "にでかけよう！");
+		System.out.println("さあ冒険に出かけよう！");
+		sc.close();
 	}
 
 }

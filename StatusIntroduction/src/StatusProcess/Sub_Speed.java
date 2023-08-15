@@ -23,6 +23,29 @@
 
 package StatusProcess;
 
-// 今後不変の数値が親クラスに入って一括変更処理をかけるために親クラスを抽象クラスとして入れ物のみ今回は定義
-public abstract class Process {
+import java.util.Random;
+
+// 継承でスーパークラスの情報をサブクラスに引っ張る
+public class Sub_Speed extends Process {
+	// フィールドの宣言
+	private int speed;
+
+	// コンストラクタ
+	public Sub_Speed() {
+		// for文
+		Random rand = new Random(); // Random変数randを宣言
+		speed = rand.nextInt(1000);// int型変数に0-999までの乱数を代入	
+	}
+	
+	// セッターメソッドを使って（）の文字列を引数として受け取る
+	public void setSpeed(int speed) {
+		this.speed = speed;
+	}
+	
+	// ゲッターメソッドを使ってフィールドの値を取り出す
+	public int getSpeed() {
+		return this.speed;
+	}
+
+
 }
