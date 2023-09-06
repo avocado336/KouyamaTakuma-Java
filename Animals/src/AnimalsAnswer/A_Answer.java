@@ -49,14 +49,15 @@ import AnimalsProcess.Information;
 public class A_Answer {
 
 	public static void main(String[] args) {
+		
+		System.out.println("コンソールに文字を入力してください");	
+		
 		Scanner sc = new Scanner(System.in);
 		// String変数にテキストを入力できるnextLineを代入
 		String usename = sc.nextLine();
 		
 		// サブクラスのインスタンスを生成
 		Information information1 = new Information();
-		
-		System.out.println("コンソールに文字を入力してください");	
 		
 		// String型配列にスキャナークラスで命名した変数を代入しスプリット文を用いて分割
 		String[] name2 = usename.split(",");

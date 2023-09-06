@@ -60,19 +60,38 @@ public class Information {
 	}
 
 	// ゲッターメソッドを使ってフィールドの値を取り出す	
+//	public String getD_kinds(String name) {
+//		// if文で各条件内の文字列が一致した場合にコンストラクタで宣言した配列内の数字を返す
+//		if(name.equals("ライオン")) {
+//			return this.d_kinds[0];
+//		} else if(name.equals("ゾウ")) {
+//			return this.d_kinds[1];
+//		} else if(name.equals("パンダ")) {
+//			return this.d_kinds[2];
+//		} else if(name.equals("チンパンジー")) {
+//			return this.d_kinds[3];
+//		} else if(name.equals("シマウマ")) {
+//			return this.d_kinds[4];
+//		} else {
+//		return this.d_kinds[5];
+//	}}
+	
 	public String getD_kinds(String name) {
-		// if文で各条件内の文字列が一致した場合にコンストラクタで宣言した配列内の数字を返す
-		if(name.equals("ライオン")) {
+		switch(name) {
+		case "ライオン":
 			return this.d_kinds[0];
-		} else if(name.equals("ゾウ")) {
+		case "ゾウ":
 			return this.d_kinds[1];
-		} else if(name.equals("パンダ")) {
+		case "パンダ":
 			return this.d_kinds[2];
-		} else if(name.equals("チンパンジー")) {
+		case "チンパンジー":
 			return this.d_kinds[3];
-		} else if(name.equals("シマウマ")) {
+		case "シマウマ":
 			return this.d_kinds[4];
-		} else {
-		return this.d_kinds[5];
-	}}
+		default:
+			return this.d_kinds[5];
+		}
+			
+	}
+	
 }
