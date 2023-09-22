@@ -34,7 +34,6 @@
 	面積：6362.0km2
 	
  */
-
 package P_Information;
 
 public class Information {

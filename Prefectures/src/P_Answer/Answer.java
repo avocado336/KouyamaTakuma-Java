@@ -38,6 +38,7 @@
 package P_Answer;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Scanner;
 
 import P_Information.Information;
@@ -46,6 +47,8 @@ public class Answer {
 
 	public static void main(String[] args) {
 		
+		System.out.println("0～10の数字をカンマ区切りで入力してください");
+		
 		Scanner sc = new Scanner(System.in);
 		// String変数にテキストを入力できるnextLineを代入
 		String usename = sc.nextLine();
@@ -53,10 +56,23 @@ public class Answer {
 		// サブクラスのインスタンスを生成
 		Information information1 = new Information();
 		
+		System.out.println("昇順、降順どちらにしますか");
+		System.out.println("昇順なら0,降順なら1を入力してください");
+		
+		// String型変数に敵をスト入力できるnextLineを代入
+		String usename2 = sc.nextLine();
+		
 		// String型配列にスキャナークラスで命名した変数を代入しスプリット文を用いて分割
 		String[] name2 = usename.split(",");
 		// ソートクラスを用いて昇順に並べる指示
-		Arrays.sort(name2);
+		
+		// if文を用いて入力する値が0なら昇順、1なら降順になる条件分岐を明記
+		if(usename2.equals("0")) {
+			Arrays.sort(name2);
+		} else if(usename2.equals("1")) {
+			Arrays.sort(name2,
+			Collections.reverseOrder());
+		}
 		
 		// for文で入力した文字（,）の回数分処理を繰り返す
 		for(int i = 0; i < name2.length; i ++) {
@@ -71,6 +87,6 @@ public class Answer {
 			System.out.println("面積：" + dou + "km2");	
 			System.out.println();
 		}	
-		sc.close();			
+		sc.close();		
 	}
 }
