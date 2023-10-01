@@ -33,7 +33,8 @@ public class Person {
 		// sysoutで出力
 		System.out.println("名前は" + name + "です");
 		System.out.println("年は" + age + "です");
-		System.out.println("BMIは" + bmi + "です");
+		// 変数を用いて出力する際に小数点以下を切り捨てするメソッドを用いて出力
+		System.out.println("BMIは" + Math.floor(bmi) + "です");
 		System.out.println("合計" + num + "人です");
 	}
 	
