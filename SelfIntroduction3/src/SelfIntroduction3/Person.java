@@ -50,7 +50,7 @@ public class Person {
 		// メソッドで定義した変数をdouble型に代入
 		double bmi = this.bmi();
 		// sysoutで出力
-		System.out.println("名前は" + firstname + "です");
+		System.out.println("名前は" + firstname + lastName + "です");
 		System.out.println("年は" + age + "です");
 		// 変数を用いて出力する際に小数点以下を切り捨てするメソッドを用いて出力
 		System.out.println("BMIは" + Math.floor(bmi) + "です");
